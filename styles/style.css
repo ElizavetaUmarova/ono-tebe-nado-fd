@@ -3,7 +3,6 @@
 поэтому расставила как поняла, что должно быть правильно порядок свойств */
 
 /* Шапка с меню и адресом*/
-
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -50,9 +49,7 @@
   padding-bottom: 5px;
   max-width: 240px;
 }
-
 /* Входная секция обложка страницы с заголовком и кнопкой */
-
 .cover {
   display: grid; 
   position: relative;
@@ -130,9 +127,7 @@
   line-height: 100%;
   text-transform: uppercase;
 }
-
 /*Секция с карточками лотами*/
-
 .lots__heading {
   padding-top: 6px;
   padding-left: 40px;
@@ -202,7 +197,7 @@
   background-size: cover;
 }
 
-.card_type_picture { 
+.card_type_picture {
   position: relative;
   background-image: url(../images/card-lot-03.jpg);
   background-repeat: no-repeat;
@@ -219,9 +214,7 @@
   line-height: 100%;
   text-underline-offset: 11%;
 }
-
 /*Секция об аукционе с логотипом*/
-
 .about__column {
   display: grid;
   grid-template-columns: 334px 1fr;
@@ -263,19 +256,17 @@
   font-size: 20px;
   line-height: 24px;
 }
-
 /*Подвал сайта с адресом, меню и списком ссылок изображений*/
-
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.footer__address{
+.footer__address {
   padding-top:1px;
 }
 
-.footer__menu{
+.footer__menu {
   padding-top: 3px;
   text-align: center;
   font-size: 18px;
@@ -291,7 +282,7 @@
   text-decoration: none;
 }
 
-.footer__social-list{
+.footer__social-list {
   display: flex;
   justify-content: end;
   gap: 48px;
