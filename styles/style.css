@@ -51,7 +51,7 @@
 }
 /* Входная секция обложка страницы с заголовком и кнопкой */
 .cover {
-  display: grid; 
+  display: grid;
   position: relative;
   height: 757px;
   background-image: url(../images/cover.jpg);
@@ -226,7 +226,7 @@
   margin: 0 auto;
   width: 240px;
   height: 240px;
-  border-radius: 50%; 
+  border-radius: 50%;
   background-color: #000000;
   justify-content: center;
   align-items: center;
@@ -251,7 +251,7 @@
   text-transform: uppercase;
 }
 
-.about__text { 
+.about__text {
   padding-right: 3px;
   font-size: 20px;
   line-height: 24px;
