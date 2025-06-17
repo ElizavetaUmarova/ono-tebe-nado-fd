@@ -36,3 +36,28 @@ img {
 button {
   font: inherit;
 }
+
+.header {
+  padding: 92px 50px 91px;
+  color: #000000;
+  font-weight: 400;
+}
+
+.cover {
+  padding: 165px 50px 50px;
+}
+
+.lots {
+  padding: 180px 24px  120px;
+}
+
+.about {
+  padding: 35px 24px  180px;
+  color: #000000;
+}
+
+.footer {
+  padding: 0px 50px 82px;
+  color: #000000;
+  font-weight: 400;
+}
