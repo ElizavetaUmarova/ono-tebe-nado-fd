@@ -18,7 +18,9 @@
             <!--все ссылки сделала якорными, чтобы нажать и перейти на нужную область страницы. 
             Для главной думала сначала, чтобы переходила на саму шапку.
             Потом  решила чтобы она переходила на главную обложку входной секции. Также сделано в футер-->
-            <a class="header__link header__link_active" href="#main-page">
+            <a 
+              class="header__link header__link_active" 
+              href="#title">
               главная
             </a>
           </li>
@@ -38,6 +40,8 @@
         />
       </a>
       <address class="address header__address">
+        <!--класс address используется и для класса footer, 
+        а классом header__address немного подредактировала отступы и т.д-->
         <a href="tel:+99995555555">+9 999 555 5555</a><br />
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br />
         <p>наб. Принсенграхт 263- 265, Амстердам</p>
@@ -46,7 +50,7 @@
     <!--Начало содержимого страницы-->
     <main>
       <!--Входная секция обложка страницы с заголовком и кнопкой-->
-      <section class="cover" id="main-page">
+      <section class="cover" id="title">
         <div class="overlay"></div>
         <h1 class="cover__title">
           <span class="aligned-text">оно</span>
@@ -162,7 +166,7 @@
           <li class="footer__menu-list-item">
             <a
               class="footer__menu-link footer__menu-link_active"
-              href="#main-page"
+              href="#title"
               >главная
             </a>
           </li>
