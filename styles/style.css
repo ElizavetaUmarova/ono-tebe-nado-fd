@@ -1,12 +1,11 @@
-/* если что прошу прощения -вроде применила PostCSS Sorting , 
-но у меня сложилось ощущение что он не применился, так как color  был выше, чем padding.
-поэтому расставила как поняла, что должно быть правильно порядок свойств */
-
 /* Шапка с меню и адресом*/
 .header {
+  padding: 92px 50px 91px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
+  color: #000000;
+  font-weight: 400;
 }
 
 .header__links-list {
@@ -18,7 +17,7 @@
   line-height: 100%;
 }
 
-.header__link {
+.header__link_active {
   text-decoration: none;
 }
 
@@ -37,7 +36,7 @@
 }
 
 .address {
-  /*еще использыется в адресе футер*/
+  /*еще используется в адресе футер*/
   text-underline-offset: 11%;
   font-size: 18px;
   font-style: normal;
@@ -53,11 +52,8 @@
 .cover {
   display: grid;
   position: relative;
-  height: 757px;
-  background-image: url(../images/cover.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  padding: 165px 50px 50px;
+  background: url(../images/cover.jpg) no-repeat center/cover;
   text-transform: uppercase;
   color: #FFFFFF;
 }
@@ -74,6 +70,7 @@
 .cover__title {
   z-index: 1;
   width: 100%;
+  padding-bottom: 107.5px;
   font-size: 100px;
   font-weight: 700;
   line-height: 114.99999999999999%;
@@ -109,7 +106,7 @@
 }
 
 .cover__description-text {
-  padding-bottom: 9px;
+  padding-bottom: 10px;
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
@@ -128,6 +125,10 @@
   text-transform: uppercase;
 }
 /*Секция с карточками лотами*/
+.lots {
+  padding: 180px 24px  120px;
+}
+
 .lots__heading {
   padding-top: 6px;
   padding-left: 40px;
@@ -141,15 +142,15 @@
 .lots__card-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: space-between;
   gap: 24px;
+  list-style: none;
 }
 
 .lots__card-list-item {
   width: 334px;
   min-height: 596px;
   margin-top: 28px;
-  color: #FFFFFF;
 }
 
 .card-link {
@@ -159,50 +160,42 @@
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
-  z-index: 1;
   justify-content: space-between;
   padding: 48px 40px;
   height: 100%;
+  color: #FFFFFF;
 }
 
 .card__title {
+  z-index: 1;
   font-size: 22px;
   font-weight: 700;
   line-height: 120%;
   text-transform: uppercase;
   text-decoration: underline;
+  text-underline-offset: 4%;
 }
 
 .card__text {
+  z-index: 1;
   font-size: 20px;
   font-weight: 400;
   line-height: 120%;
 }
 
 .card_type_film {
-  position: relative;
-  background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: url(../images/card-lot-01.jpg) no-repeat center/cover;
 }
 
 .card_type_book {
-  position: relative;
-  background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: url(../images/card-lot-02.jpg) no-repeat center/cover;
 }
 
 .card_type_picture {
-  position: relative;
-  background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: url(../images/card-lot-03.jpg) no-repeat center/cover;
 }
 
 .lots__look-more-link {
@@ -215,6 +208,11 @@
   text-underline-offset: 11%;
 }
 /*Секция об аукционе с логотипом*/
+.about {
+  padding: 35px 24px  180px;
+  color: #000000;
+}
+
 .about__column {
   display: grid;
   grid-template-columns: 334px 1fr;
@@ -260,6 +258,9 @@
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 0px 50px 82px;
+  color: #000000;
+  font-weight: 400;
 }
 
 .footer__address {
